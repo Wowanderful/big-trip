@@ -6,12 +6,13 @@ import {render} from './render.js';
 
 const filterParent = document.querySelector('.trip-controls__filters');
 const tripMainElement = document.querySelector('.trip-main');
-const siteMainElement = document.querySelector('.page-body__container');
+
+const siteMainContainer = document.querySelector('.page-main').querySelector('.page-body__container');
 
 render (new FilterView(), filterParent);
 render(new NewEventButtonView(), tripMainElement);
 
-const presenter = new Presenter;
-presenter.init(siteMainElement);
+const presenter = new Presenter();
+presenter.init(siteMainContainer);
 
 

@@ -1,7 +1,7 @@
 import {createElement} from '../render.js';
 
 const createBoardTemplate = () => {
-  `<section class="trip-events></section>`
+  `<section class="trip-events"></section>`
 }
 
 export default class BoardEventsView {
